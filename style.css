@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    color: rgba(255, 255, 255, 0.788);
+}
+
+header{
+    
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.main-text{
+    margin-left: 40px;
+    
+}
+
+.main-text h1{
+    font-size: 270%;
+    width: 80%;
+}
+
+.main-text p{
+    font-size: 120%;
+}
+
+.main-text button{
+    border-radius: 25px;
+    padding: 15px 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 100%;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 18px 48px -12px rgba(0, 0, 0, 0.514);
+    color: hsl(257, 40%, 49%);
+    font-weight: bolder;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
