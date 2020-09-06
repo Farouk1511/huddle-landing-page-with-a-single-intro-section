@@ -1,60 +1,169 @@
-*{
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins',sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    background-image: url(./images/bg-desktop.svg);
-    background-color: hsl(257, 40%, 49%);
-    color: rgba(255, 255, 255, 0.788);
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.788);
 }
 
-header{
-    
-    padding: 50px;
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
-.container{
+header {
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.main-text {
+  margin-left: 40px;
+}
+
+.main-text h1 {
+  font-size: 300%;
+}
+
+.main-text p {
+  font-size: 120%;
+}
+
+.main-text button {
+    cursor: pointer;
+  border-radius: 25px;
+  padding: 15px 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-size: 100%;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 18px 48px -12px rgba(0, 0, 0, 0.514);
+  color: hsl(257, 40%, 49%);
+  font-weight: bolder;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1440px) {
+  .main-text h1 {
+    font-size: 180%;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .container img {
+    width: 500px;
+  }
+}
+/*Big Tablets to 1200px (widths smaller than 1140 row)*/
+@media only screen and (max-width: 1200px) {
+  .main-text h1 {
+    font-size: 160%;
+  }
+  .main-text p {
+    font-size: 100%;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .container img {
+    width: 400px;
+  }
+}
+
+/*Small tablet to big tablet: 768px - 1023px*/
+@media only screen and (max-width: 1023px) {
+  .main-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-}
-
-.main-text{
-    margin-left: 40px;
-    
-}
-
-.main-text h1{
-    font-size: 270%;
-    width: 80%;
-}
-
-.main-text p{
-    font-size: 120%;
-}
-
-.main-text button{
-    border-radius: 25px;
-    padding: 15px 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    flex-direction: column;
+  }
+  .main-text h1 {
+    font-size: 200%;
+    text-align: center;
+  }
+  .main-text p {
     font-size: 100%;
-    border: 0;
-    background-color: #fff;
-    box-shadow: 0 18px 48px -12px rgba(0, 0, 0, 0.514);
-    color: hsl(257, 40%, 49%);
-    font-weight: bolder;
+    text-align: center;
+    
+  }
+  .main-text button {
+    margin-top: 20px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container img {
+    width: 500px;
+  }
 }
 
+/*Small phones to small tablet: 481px - 767px*/
+@media only screen and (max-width: 767px) {
+  .main-text h1 {
+    font-size: 160%;
+    text-align: center;
+  }
+  .main-text p {
+    font-size: 90%;
+    text-align: center;
+   
+  }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  .container img {
+    width: 400px;
+  }
+}
 
+/*Small phones from 0-480px*/
+@media only screen and (max-width: 480px) {
+
+    .main-text h1 {
+        font-size: 110%;
+        text-align: center;
+      }
+      .main-text p {
+        font-size: 90%;
+        text-align: center;
+       ;
+      }
+    
+      .container img {
+        width: 300px;
+      }
+}
